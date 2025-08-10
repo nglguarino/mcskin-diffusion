@@ -10,7 +10,7 @@ trained for 50 epochs on 10k images.
 ## Problem Diagnosis
 The symptoms (gradients and random pixels) suggest the model is undertrained.
 
-Other fixes to try:
+Fixes to try:
 * Experiment with training settings 
 * Increase subset size
 * Increase the model's capacity

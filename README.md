@@ -21,7 +21,7 @@ trained for 50 epochs on 800k images.
 
 
 ## To test:
-- [x] Increase training set size (tested on 800k)
+- [x] Increase training set size (test on 800k)
 - [x] Sample generation at training checkpoints
 - [ ] Limit the training set to high-quality skins only
 - [ ] Increase the model's capacity: n_feat: 64 → 128 

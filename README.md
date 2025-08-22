@@ -12,14 +12,23 @@ trained for 50 epochs on 200k images.
 
 ![Skin generated from the second training](assets/diffuser_2.png)
 
-## Problem Diagnosis
-The symptoms (gradients and random pixels) suggest the model is undertrained.
+Third run:
+trained for 50 epochs on 800k images.
 
-Fixes to try:
-* Experiment with training settings 
-* Increase subset size
-* Increase the model's capacity
-* Add self-supervised context
+![Skin generated from the second training](assets/diff.png)
+![Skin generated from the second training](assets/diff2.png)
+![Skin generated from the second training](assets/diff3.png)
+
+
+## To test:
+- [x] Increase training set size (tested on 800k)
+- [x] Sample generation at training checkpoints
+- [ ] Limit the training set to high-quality skins only
+- [ ] Increase the model's capacity: n_feat: 64 → 128 
+- [ ] Finer denoising: timesteps: 500 → 1000
+- [ ] Self-attention blocks at 16×16 resolution
+- [ ] Better noise schedule: cosine schedule
+- [ ] Smooth weights update: EMA
 
 
 ## Visualizing Samples
